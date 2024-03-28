@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.btn-calendar {
+    @apply w-[30px] py-1 px-2 flex justify-center items-center text-white bg-custom-brown rounded-md font-bold hover:bg-opacity-85;
+}
