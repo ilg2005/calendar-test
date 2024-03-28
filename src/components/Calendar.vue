@@ -10,11 +10,11 @@ const weekDates = computed(() => calendarStore.weekDates);
 </script>
 
 <template>
-  <div class="flex items-center space-x-2">
+  <div class="flex items-center space-x-2 w-3/4">
     <button class="btn-calendar" @click="calendarStore.toPrevWeek()">
       <ChevronLeftIcon class="h-5 w-5 scale-150"/>
     </button>
-    <div class="flex overflow-x-auto">
+    <div class="flex justify-between w-full px-4">
       <Day v-for="date in weekDates" :key="date.toISOString()" :date="date" />
     </div>
     <button class="btn-calendar" @click="calendarStore.toNextWeek()">

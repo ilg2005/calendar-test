@@ -9,15 +9,15 @@ const props = defineProps({
     }
 });
 
-const dayOfWeek = format(props.date, 'eee', { locale: ru });
-const dayOfMonth = format(props.date, 'd', { locale: ru });
+const weekDay = format(props.date, 'eee', { locale: ru });
+const monthDay = format(props.date, 'd', { locale: ru });
 const month = format(props.date, 'LLL', { locale: ru });
 </script>
 
 <template>
   <div class="flex flex-col items-center">
-    <div>{{ dayOfWeek }}</div>
-    <div>{{ dayOfMonth }}</div>
+    <div>{{ weekDay }}</div>
+    <div>{{ monthDay }}</div>
     <div>{{ month }}</div>
   </div>
 </template>

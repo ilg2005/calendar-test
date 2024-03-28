@@ -4,11 +4,9 @@ import Calendar from "./components/Calendar.vue";
 </script>
 
 <template>
-  <div>
-    <h1 class="p-4">
+    <div class="container">
       <Calendar/>
-    </h1>
-  </div>
+    </div>
 </template>
 
 <style scoped>
