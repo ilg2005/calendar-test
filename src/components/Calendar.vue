@@ -1,13 +1,12 @@
 <script setup>
-import {useCalendarStore} from '../stores/calendarStore';
+import {useCalendarStore} from '@/stores/calendarStore';
 import {ChevronLeftIcon, ChevronRightIcon} from '@heroicons/vue/24/solid'
-import {format} from 'date-fns';
-import {ru} from 'date-fns/locale';
 import {computed} from 'vue';
+import Day from "@/components/Day.vue";
 
 const calendarStore = useCalendarStore();
 
-const weekDates = computed(() => calendarStore.weekDates.map(date => format(date, 'eee, MMM d', {locale: ru})));
+const weekDates = computed(() => calendarStore.weekDates);
 </script>
 
 <template>
@@ -16,9 +15,7 @@ const weekDates = computed(() => calendarStore.weekDates.map(date => format(date
       <ChevronLeftIcon class="h-5 w-5 scale-150"/>
     </button>
     <div class="flex overflow-x-auto">
-      <div v-for="(date, index) in weekDates" :key="index" class="px-4 py-2">
-        {{ date }}
-      </div>
+      <Day v-for="date in weekDates" :key="date.toISOString()" :date="date" />
     </div>
     <button class="btn-calendar" @click="calendarStore.toNextWeek()">
       <ChevronRightIcon class="h-5 w-5 scale-150"/>
