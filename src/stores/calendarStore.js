@@ -4,6 +4,7 @@ import { addDays, startOfWeek } from 'date-fns';
 export const useCalendarStore = defineStore('calendar', {
     state: () => ({
         currentDate: new Date(),
+        selectedDate: null,
     }),
     getters: {
         weekDates: (state) => {
@@ -25,6 +26,9 @@ export const useCalendarStore = defineStore('calendar', {
         },
         toPrevWeek() {
             this.currentDate = addDays(this.currentDate, -7);
+        },
+        setSelectedDate(date) {
+            this.selectedDate = date;
         },
     },
 });

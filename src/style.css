@@ -9,3 +9,10 @@
 .btn-calendar {
     @apply w-[30px] py-1 px-2 flex justify-center items-center text-white bg-custom-brown rounded-md hover:bg-opacity-85;
 }
+
+.calendar-day {
+    @apply cursor-pointer w-1/6 mx-1 rounded-md hover:bg-custom-green hover:w-1/6 hover:rounded-md;
+}
+.calendar-day-selected {
+    @apply bg-custom-green shadow-md;
+}
