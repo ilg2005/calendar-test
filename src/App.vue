@@ -7,13 +7,10 @@ import AdsList from "@/components/AdsList.vue";
 <template>
   <div class="container">
     <div class="flex flex-col justify-center items-center w-full py-10">
-      <p class="text-xl mb-10">Выберите дату в календаре:</p>
+      <p class="text-xl mx-auto mb-10">Выберите дату в календаре:</p>
       <Calendar class="mb-10"/>
       <AdsList/>
     </div>
   </div>
 </template>
 
-<style scoped>
-
-</style>

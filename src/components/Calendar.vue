@@ -10,7 +10,8 @@ const weekDates = computed(() => calendarStore.weekDates);
 </script>
 
 <template>
-  <div class="flex items-center space-x-2 w-3/4">
+  <div class="flex justify-center items-center space-x-2 w-3/4">
+
     <button class="btn-calendar" @click="calendarStore.toPrevWeek()">
       <ChevronLeftIcon class="h-5 w-5 scale-150"/>
     </button>
@@ -23,5 +24,3 @@ const weekDates = computed(() => calendarStore.weekDates);
   </div>
 </template>
 
-<style scoped>
-</style>
