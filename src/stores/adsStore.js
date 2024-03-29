@@ -7,8 +7,6 @@ export const useAdsStore = defineStore('ads', {
         ads: mockData,
     }),
     getters: {
-        adsByDate: (state) => {
-            return (date) => state.ads.filter(ad => ad.date === format(date, 'M/d/yyyy'));
-        },
+        adsByDate: state => date => state.ads.filter(ad => ad.date === format(date, 'M/d/yyyy')),
     },
 });

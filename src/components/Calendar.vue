@@ -15,7 +15,7 @@ const weekDates = computed(() => calendarStore.weekDates);
       <ChevronLeftIcon class="h-5 w-5 scale-150"/>
     </button>
     <div class="flex justify-between w-full px-4">
-      <Day v-for="date in weekDates" :key="date.toISOString()" :date="date" />
+      <Day v-for="date in weekDates" :key="date.toISOString()" :date="date"/>
     </div>
     <button class="btn-calendar" @click="calendarStore.toNextWeek()">
       <ChevronRightIcon class="h-5 w-5 scale-150"/>
