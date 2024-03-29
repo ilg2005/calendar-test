@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY . .
 
-COPY .public /app/public
+COPY public /app/public
 
 RUN npm install
 
