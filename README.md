@@ -1,7 +1,13 @@
-# Vue 3 + Vite
+# Тестовое задание
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Необходимо разработать SPA-сайт на основе Vue3, который содержит в себе список объявлений (карточка объявления на свое усмотрение, но должна быть дата у каждого объявления), которые выводятся по нужной дате, выбранной в календаре
 
-## Recommended IDE Setup
+Необходимая реализация:
 
-- [VS Code](https://code.visualstudio.com/) + [Vue - Official](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (previously Volar) and disable Vetur
+1. Должен быть реализован горизонтальный календарь на 4-6 дней подобного рода:
+   ![Screenshot_1.jpg](assets/Screenshot_1.jpg)
+2. Кнопки по бокам должны должны пролистывать полоску календаря на предыдущие/следующие дни
+3. При наведении на день, элемент должен подсвечиваться
+4. Выбранный день должен выделяться на полоске календаря
+5. При нажатии на определенный день должен выводиться список  объявлений на выбранную дату
+6. Общий список объявлений (со всеми датами) должен лежать в сторе пользователя
