@@ -4,7 +4,7 @@
 
 
 .container {
-    @apply flex justify-center items-center mx-auto py-10 h-full;
+    @apply flex justify-center items-center mx-auto h-full;
 }
 .btn-calendar {
     @apply w-[30px] py-1 px-2 flex justify-center items-center text-white bg-custom-brown rounded-md hover:bg-opacity-85;

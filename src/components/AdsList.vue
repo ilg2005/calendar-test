@@ -15,7 +15,8 @@ const adsForSelectedDate = computed(() => {
 </script>
 
 <template>
-  <p>Найдено объявлений: {{ adsForSelectedDate.length }}</p>
+  <p v-if="calendarStore.selectedDate" class="pb-4">Найдено объявлений: {{ adsForSelectedDate.length }}</p>
+
 
   <table class="container min-w-full divide-y divide-gray-200">
     <tbody class="bg-white divide-y divide-gray-200">
